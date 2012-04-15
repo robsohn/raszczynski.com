@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Potrfolio fotograficzne - Robert Raszczyński, Bełchatów, Poland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Robert Raszczyński">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/raszczynski.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Portfolio fotograficzne Roberta Raszczyńskiego</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li {% if page == 'fotografie' %}class="active"{% endif %}><a href="/">fotografie</a></li>
+              <li {% if page == 'o-mnie' %}class="active"{% endif %}><a href="/o-mnie">o mnie</a></li>
+              <li {% if page == 'kontakt' %}class="active"{% endif %}><a href="/kontakt">kontakt</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container"> {% block content %}{% endblock %} </div>
+
+    <div class="container footer">
+        <p>&copy; Copyright 2012 <strong>Robert Raszczyński</strong></p>
+        <p>Wszelkie prawa autorskie do materiałów zawartych na stronie
+        raszczynski.com i podstronach należą do <strong>Roberta
+            Raszczyńskiego</strong>.<br />
+        Kopiowanie, modyfikowanie oraz transmitowanie elektronicznie lub w inny
+        sposób, powielanie, wykorzystywanie i dystrybucja zawartych tu
+        materiałów dozwolona jest wyłącznie za zgodą właściciela.</p>
+    </div>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap-transition.js"></script>
+    <script src="/js/bootstrap-collapse.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/slideshow.js"></script>
+
+  </body>
+</html>

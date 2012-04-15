@@ -1,0 +1,35 @@
+{% extends layout %}
+
+{% block content %}
+  <div class="span1">&nbsp;</div>
+  <div class="span10 slideshow-container">
+
+      <header>
+        <h2>female landscapes</h2>
+        <p>It's an exploration of the female form within the intricate dance between light and shadow. A journey into poetic landscapes full of the sensuous lines, graceful curves and the beautiful angles of a woman's body.</p>
+      </header>
+
+      <nav class="slideshow-nav">
+        <a href="#previous" id="previous" class="btn btn-small" title="Poprzednie Zdjęcie">&lsaquo;&lsaquo; poprzednie</a>
+        <a href="#next" id="next" class="btn btn-small" title="Następne Zdjęcie">następne &rsaquo;&rsaquo;</a>
+
+        <a href="#slideshow" id="pause" class="started btn btn-small" title="Stop / Start Slideshow">stop slideshow</a>
+      </nav>
+
+        <div id="slideshow">
+            <img src="/photos/female-landscapes/01.jpg" alt="" />
+            <img src="/photos/female-landscapes/02.jpg" alt="" />
+            <img src="/photos/female-landscapes/03.jpg" alt="" />
+            <img src="/photos/female-landscapes/04.jpg" alt="" />
+            <img src="/photos/female-landscapes/05.jpg" alt="" />
+            <img src="/photos/female-landscapes/06.jpg" alt="" />
+            <img src="/photos/female-landscapes/07.jpg" alt="" />
+            <img src="/photos/female-landscapes/08.jpg" alt="" />
+            <img src="/photos/female-landscapes/09.jpg" alt="" />
+            <img src="/photos/female-landscapes/10.jpg" alt="" class="active" />
+        </div>
+  </div>
+  <div class="span1">&nbsp;</div>
+</div>
+
+{% endblock %}
