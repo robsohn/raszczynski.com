@@ -31,4 +31,8 @@ $app->get('/female-landscapes', function () use ($app) {
     return $app['twig']->render('female-landscapes.twig');
 });
 
+$app->get('/portraits', function () use ($app) {
+    return $app['twig']->render('portraits.twig');
+});
+
 $app->run();
