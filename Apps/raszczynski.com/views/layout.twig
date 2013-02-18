@@ -2,64 +2,62 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8">
-    <title>Potrfolio fotograficzne - Robert Raszczyński, Bełchatów, Poland</title>
+    <title>Pracownia Portretu - Robert Raszczyński, Bełchatów, Poland</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Pracownia Portretu - Robert Raszczyński, Bełchatów, Poland">
     <meta name="author" content="Robert Raszczyński">
-
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/css/raszczynski.css" rel="stylesheet">
-    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="/favicon.ico">
   </head>
 
   <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <header>
+            <h1>Pracownia Portretu - Fotografia Glamour</h1>
+          </header>
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="/">Portfolio fotograficzne Roberta Raszczyńskiego</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li {% if page == 'fotografie' %}class="active"{% endif %}><a href="/">fotografie</a></li>
-              <!-- <li {% if page == 'o-mnie' %}class="active"{% endif %}><a href="/o-mnie">o mnie</a></li> -->
-              <li {% if page == 'kontakt' %}class="active"{% endif %}><a href="/kontakt">kontakt</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+          <nav>
+            <a href="/portrety-glamour" title="Pracownia Portretu Kobiecego - Portrety Glamour">{% if page == 'portrety-glamour' %}<strong>&rsaquo;</strong> {% endif %}Portrety Glamour</a>
+<!--
+            <a href="/before-after">Before &amp; After</a>
+            <a href="/robert">O Robercie</a>
+-->
+            <a href="/kontakt">{% if page == 'kontakt' %}<strong>&rsaquo;</strong> {% endif %}Kontakt</a>
+          </nav>
+          <hr>
+          <nav>
+            <a href="/female-landscapes">{% if page == 'female-landscapes' %}<strong>&rsaquo;</strong> {% endif %}Akt - Female Landscapes</a>
+          </nav>
+          <hr>
+          <nav>
+            <a href="https://twitter.com/raszczynski">twitter</a>
+            <a href="https://www.facebook.com/robertraszczynski">facebook</a>
+          </nav>
+          <hr>
+          <p class="muted indent">Robert Raszczyński<br>
+            <a title="Kontakt Robert Raszczynski" href="mailto:&#114;&#97;&#115;&#122;&#99;&#122;&#121;&#110;&#115;&#107;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#114;&#97;&#115;&#122;&#99;&#122;&#121;&#110;&#115;&#107;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+        </div>
+        <div class="span9 content">
+          {% block content %}{% endblock %}
         </div>
       </div>
     </div>
-
-    <div class="container"> {% block content %}{% endblock %} </div>
-
-    <div class="container footer">
-        <p>&copy; Copyright 2012 <strong>Robert Raszczyński</strong></p>
-        <p>Wszelkie prawa autorskie do materiałów zawartych na stronie
-        raszczynski.com i podstronach należą do <strong>Roberta
-            Raszczyńskiego</strong>.<br />
-        Kopiowanie, modyfikowanie oraz transmitowanie elektronicznie lub w inny
-        sposób, powielanie, wykorzystywanie i dystrybucja zawartych tu
-        materiałów dozwolona jest wyłącznie za zgodą właściciela.</p>
-    </div>
-
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap-carousel.js"></script>
-    <script src="/js/bootstrap-transition.js"></script>
-    <script src="/js/bootstrap-collapse.js"></script>
-    <script src="/js/bootstrap-modal.js"></script>
-    <script src="/js/slideshow.js"></script>
-
+    <footer>
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span3">&nbsp;</div>
+          <div class="span9">
+            <p>&copy; Copyright 2013 <strong>Robert Raszczyński</strong></p>
+            <p>Wszelkie prawa autorskie do materiałów zawartych na stronie raszczynski.com i podstronach należą do <strong>Roberta Raszczyńskiego</strong>.<br>
+            Kopiowanie, modyfikowanie oraz transmitowanie elektronicznie lub w inny sposób, powielanie, wykorzystywanie i dystrybucja zawartych tu materiałów dozwolona jest wyłącznie za zgodą właściciela.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
