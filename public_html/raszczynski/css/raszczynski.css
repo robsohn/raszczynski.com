@@ -1,99 +1,69 @@
 body {
-    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-  }
-
-.brand {
-    text-indent: -999999px;
-    width: 210px;
-    background-image: url(../img/robert-raszczynski.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    font-family: Palatino, 'Times New Roman', Times, serif;
 }
 
-.index-gallery {
+a {
+    color: #da3800;
+}
+
+a:hover {
+    color: #da3800;
+}
+
+.main-colour {
+    color: #da3800;
+}
+
+header h1 {
+    margin: 2em auto;
+    text-indent: -9999px;
+    background: url('/img/pracownia-portretu-fotografia-glamour.png') center no-repeat;
+}
+
+nav a {
     display: block;
-    width: 480px;
-    height: 384px;
-    background-color: #EF5411;
-    margin-top: 4em;
-    color: #eee;
-    text-align: right;
+    margin-left: 1em;
 }
 
-.index-gallery h2, .slideshow-container header h2 {
-    letter-spacing: 1px;
-    font-family: Baskerville,serif;
-    font-size: 2.7em;
-    font-style: italic;
-    font-weight: normal;
-    margin: 1em;
-    margin-top: 30%;
+.content {
+    margin-top: 3em;
 }
 
-.index-gallery p {
-    margin: 1em;
-    margin-left:3em;
+.indent {
+    margin-left: 1em;
 }
 
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
-.footer {
+footer {
     margin-top: 5em;
     font-size: 0.8em;
     text-align: center;
 }
 
-.footer p {
-    font-size: 1em;
+footer p {
+    font-size: 0.9em;
     text-align: center;
     line-height:1.2em;
+    color: #666;
 }
 
-div.slideshow-container {
-    position: relative;
+.carousel-inner {
+    width: 800px;
+    height: 540px;
+    margin-left: 40px;
 }
 
-div#slideshow {
-    width: 550px; height: 440px;
+.carousel-control {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-div#slideshow img {
-    position: absolute; top: 0; left: 0; z-index: 5; opacity: 0.0;
+.carousel-control.right {
+    left: 825px;
 }
 
-div#slideshow img.active {
-    z-index: 10; opacity: 1.0;
+.carousel-control.left {
+    left: 10px;
 }
 
-#slideshow img.last-active {
-    z-index: 9;
-}
-
-.slideshow-nav {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 300px;
-}
-
-.slideshow-container header {
-    position: absolute;
-    top: 0;
-    right: 0px;
-    width: 350px;
-    text-align: right;
-}
-
-.slideshow-container header h2 {
-    margin: 1em 0;
-    line-height: 2em;
-    padding: 0 20px;
+.homepage-img {
+    margin-top: -3em;
 }
