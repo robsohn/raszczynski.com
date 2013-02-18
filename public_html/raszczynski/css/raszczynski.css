@@ -1,12 +1,69 @@
-.footer {
+body {
+    font-family: Palatino, 'Times New Roman', Times, serif;
+}
+
+a {
+    color: #da3800;
+}
+
+a:hover {
+    color: #da3800;
+}
+
+.main-colour {
+    color: #da3800;
+}
+
+header h1 {
+    margin: 2em auto;
+    text-indent: -9999px;
+    background: url('/img/pracownia-portretu-fotografia-glamour.png') center no-repeat;
+}
+
+nav a {
+    display: block;
+    margin-left: 1em;
+}
+
+.content {
+    margin-top: 3em;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+footer {
     margin-top: 5em;
     font-size: 0.8em;
     text-align: center;
 }
 
-.footer p {
+footer p {
     font-size: 0.9em;
     text-align: center;
     line-height:1.2em;
     color: #666;
+}
+
+.carousel-inner {
+    width: 800px;
+    height: 540px;
+    margin-left: 40px;
+}
+
+.carousel-control {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.carousel-control.right {
+    left: 825px;
+}
+
+.carousel-control.left {
+    left: 10px;
+}
+
+.homepage-img {
+    margin-top: -3em;
 }

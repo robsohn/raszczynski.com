@@ -4,9 +4,9 @@
 <div id="slideshow" class="carousel slide">
   <div class="carousel-inner">
     {% for photo in gallery %}
-      <div class="item{% if loop.first == true %} active{% endif %}">
-        <img src="/photos/female-landscapes/{{ photo }}" alt="Akt - Female Landscapes - Pracownia Portretu - Robert Raszczynski - Akt nr. {{ loop.index }}">
-      </div>
+        <div class="item{% if loop.first == true %} active{% endif %}">
+          <img src="/photos/portraits/{{ photo }}" alt="Pracownia Portretu - Robert Raszczynski - Portret nr. {{ loop.index }}">
+        </div>
     {% endfor %}
   </div>
 

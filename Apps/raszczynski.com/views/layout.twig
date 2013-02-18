@@ -14,39 +14,50 @@
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
-          <h1>Pracownia Portretu</h1>
+          <header>
+            <h1>Pracownia Portretu - Fotografia Glamour</h1>
+          </header>
 
-          <ul class="nav">
-            <li><a href="/galeria">Galeria</a></li>
-            <li><a href="/before-after">Before &amp; After</a></li>
-            <li><a href="/robert">O Robercie</a></li>
-            <li><a href="/kontakt">Kontakt</a></li>
-          </ul>
-          <hr />
-          <ul class="nav">
-            <li><a href="/galeria">twitter</a></li>
-            <li><a href="/before-after">facebook</a></li>
-          </ul>
-          <hr />
-          <p>Robert Raszczyński<br />
-            <a title="" href="mailto:&#114;&#97;&#115;&#122;&#99;&#122;&#121;&#110;&#115;&#107;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#114;&#97;&#115;&#122;&#99;&#122;&#121;&#110;&#115;&#107;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+          <nav>
+            <a href="/portrety-glamour" title="Pracownia Portretu Kobiecego - Portrety Glamour">{% if page == 'portrety-glamour' %}<strong>&rsaquo;</strong> {% endif %}Portrety Glamour</a>
+<!--
+            <a href="/before-after">Before &amp; After</a>
+            <a href="/robert">O Robercie</a>
+-->
+            <a href="/kontakt">{% if page == 'kontakt' %}<strong>&rsaquo;</strong> {% endif %}Kontakt</a>
+          </nav>
+          <hr>
+          <nav>
+            <a href="/female-landscapes">{% if page == 'female-landscapes' %}<strong>&rsaquo;</strong> {% endif %}Akt - Female Landscapes</a>
+          </nav>
+          <hr>
+          <nav>
+            <a href="https://twitter.com/raszczynski">twitter</a>
+            <a href="https://www.facebook.com/robertraszczynski">facebook</a>
+          </nav>
+          <hr>
+          <p class="muted indent">Robert Raszczyński<br>
+            <a title="Kontakt Robert Raszczynski" href="mailto:&#114;&#97;&#115;&#122;&#99;&#122;&#121;&#110;&#115;&#107;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#114;&#97;&#115;&#122;&#99;&#122;&#121;&#110;&#115;&#107;&#105;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
         </div>
-        <div class="span9">
-          PRAWA
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">&nbsp;</div>
-        <div class="span9 footer">
-          <p>&copy; Copyright 2013 <strong>Robert Raszczyński</strong></p>
-          <p>Wszelkie prawa autorskie do materiałów zawartych na stronie raszczynski.com i podstronach należą do <strong>Roberta Raszczyńskiego</strong>.<br />
-          Kopiowanie, modyfikowanie oraz transmitowanie elektronicznie lub w inny sposób, powielanie, wykorzystywanie i dystrybucja zawartych tu materiałów dozwolona jest wyłącznie za zgodą właściciela.</p>
+        <div class="span9 content">
+          {% block content %}{% endblock %}
         </div>
       </div>
     </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span3">&nbsp;</div>
+          <div class="span9">
+            <p>&copy; Copyright 2013 <strong>Robert Raszczyński</strong></p>
+            <p>Wszelkie prawa autorskie do materiałów zawartych na stronie raszczynski.com i podstronach należą do <strong>Roberta Raszczyńskiego</strong>.<br>
+            Kopiowanie, modyfikowanie oraz transmitowanie elektronicznie lub w inny sposób, powielanie, wykorzystywanie i dystrybucja zawartych tu materiałów dozwolona jest wyłącznie za zgodą właściciela.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
