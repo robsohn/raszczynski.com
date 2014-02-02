@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Pracownia Portretu - Robert Raszczyński, Bełchatów, Poland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pracownia Portretu - Robert Raszczyński, Bełchatów, Poland">
+    <meta name="author" content="Robert Raszczyński">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link href="/css/raszczynski.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <header>
+            <h1>Pracownia Portretu</h1>
+            <h2>Robert Raszczyński</h2>
+          </header>
+
+          <nav>
+            <a href="/portrety-glamour" title="Pracownia Portretu Kobiecego - Portrety Glamour">Portrety Glamour</a>
+            <!-- <a href="/portrety-akt">Portrety Akt</a> -->
+            <a href="/kobiece-krajobrazy">Kobiece Krajobrazy</a>
+            <a href="/kontakt">Kontakt</a>
+          </nav>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 content">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="span3">&nbsp;</div>
+          <div class="span9">
+            <p>&copy; Copyright 2013 <strong>Robert Raszczyński</strong></p>
+            <p>Wszelkie prawa autorskie do materiałów zawartych na stronie raszczynski.com i podstronach należą do <strong>Roberta Raszczyńskiego</strong>.<br>
+            Kopiowanie, modyfikowanie oraz transmitowanie elektronicznie lub w inny sposób, powielanie, wykorzystywanie i dystrybucja zawartych tu materiałów dozwolona jest wyłącznie za zgodą właściciela.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38582555-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
