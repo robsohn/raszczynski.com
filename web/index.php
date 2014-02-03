@@ -54,4 +54,16 @@ $app->get('/kobiece-krajobrazy', function () use ($app) {
     );
 });
 
+$app->get('/akty', function () use ($app) {
+    $dir = new \DirectoryIterator(dirname(__FILE__) . '/photos/nudes');
+    $gallery = new S2r\Gallery();
+    return $app['twig']->render(
+        'akty.twig',
+        array(
+            'page' => 'akty',
+            'gallery' => $gallery->getImages($dir),
+        )
+    );
+});
+
 $app->run();
