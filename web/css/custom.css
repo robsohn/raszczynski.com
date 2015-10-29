@@ -1,0 +1,25 @@
+header {
+    background-image: url(../img/header1.jpg);
+}
+
+p.whoIam {
+    line-height: 1.7;
+    padding: 40px 0 0 20px;
+}
+
+hr.bigger {
+    margin: 30px auto;
+}
+
+@media(min-width:768px) {
+    header .header-content {
+        top: 30%;
+        -webkit-transform: translateY(-30%);
+        -ms-transform: translateY(-30%);
+        transform: translateY(-30%);
+    }
+}
+
+.service-box p {
+    margin-top: 2em;
+}
