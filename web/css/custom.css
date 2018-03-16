@@ -7,6 +7,15 @@ p.whoIam {
     padding: 40px 0 0 20px;
 }
 
+p.about {
+  line-height: 1.7;
+  padding: 5px 0 0 20px;
+}
+
+span.experience {
+  padding-left: 2em;
+}
+
 hr.bigger {
     margin: 30px auto;
 }

@@ -1,0 +1,6 @@
+Run the website locally
+
+```
+cd web
+php -S localhost:8000
+```
